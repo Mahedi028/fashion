@@ -88,7 +88,7 @@ TickerProviderStateMixin{
             unselectedLabelColor: Colors.black,
             physics: BouncingScrollPhysics(),
             isScrollable: true,
-            // indicatorPadding: EdgeInsets.all(5.0),
+            indicatorPadding: EdgeInsets.all(5.0),
             indicator: BoxDecoration(
               color: Colors.grey,
               borderRadius: BorderRadius.circular(10.0)

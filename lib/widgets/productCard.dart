@@ -25,7 +25,7 @@ class productCardPage extends StatelessWidget {
       ),
       child: Container(
         width: 280,
-        height: 380,
+        height: 420,
         child: Column(
           children: [
             ClipRRect(

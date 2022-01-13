@@ -4,12 +4,17 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class productDetailsPage extends StatelessWidget {
+  final int id;
+  productDetailsPage({
+    required this.id,
+  });
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
            IconButton(
              color: Colors.grey,
@@ -43,11 +48,11 @@ class productDetailsPage extends StatelessWidget {
             productImage: Hero(
               tag: 'product', 
               child: Image.asset(
-                'assets/shirts/img-2.jpg',
+                'assets/shirts/img-${id}.jpg',
                 width: 400,
                 height: 320,
                 fit: BoxFit.cover,
-                scale: 2,
+                scale: 1,
                 ),
               ),
             
@@ -78,7 +83,8 @@ class productDetailsPage extends StatelessWidget {
               ),
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Card(
                       color: Colors.red,

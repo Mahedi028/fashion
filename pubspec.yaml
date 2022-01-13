@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^2.2.0
   image_picker: ^0.8.4+4
+  font_awesome_flutter: ^9.2.0
 
 dev_dependencies:
   flutter_test:
@@ -61,13 +62,26 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/shirts/img-0.jpg
     - assets/shirts/img-1.jpg
     - assets/shirts/img-2.jpg
     - assets/shirts/img-3.jpg
     - assets/shirts/img-4.jpg
+    - assets/shirts/img-5.jpg
+    - assets/shirts/img-6.jpg
+    - assets/shirts/img-7.jpg
     - assets/categoriesImage/men.jpg
     - assets/categoriesImage/women.jpg
     - assets/categoriesImage/child.jpg
+    - assets/punjabi/pic-0.jpg
+    - assets/punjabi/pic-1.jpg
+    - assets/punjabi/pic-2.jpg
+    - assets/punjabi/pic-3.jpg
+    - assets/punjabi/pic-4.jpg
+    - assets/punjabi/pic-5.jpg
+    - assets/punjabi/pic-6.jpg
+    - assets/punjabi/pic-7.jpg
+    - assets/punjabi/pic-8.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

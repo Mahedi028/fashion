@@ -1,5 +1,8 @@
+import 'dart:developer';
 import 'package:fashion/widgets/categoriesCard.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'menspage.dart';
 
@@ -37,12 +40,13 @@ class categoriesPage extends StatelessWidget {
         ),
         body:Center(
           child:GridView(
+            padding:EdgeInsets.all(15.0),
+            scrollDirection: Axis.vertical,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               crossAxisSpacing: 10.0,
-              mainAxisSpacing: 10.0,
+              mainAxisSpacing: 80.0,
               ),
-              padding: EdgeInsets.all(5.0),
             children: [
               //-----1st starts--------//
                   GestureDetector(
@@ -58,7 +62,14 @@ class categoriesPage extends StatelessWidget {
               fit: BoxFit.cover,
 
               ),
-            categoriesName: Text('mens'),
+            categoriesName: Text(
+              'mens',
+              style: GoogleFonts.poppins(
+                fontSize: 25,
+                fontWeight:FontWeight.bold,
+                color: Colors.grey
+              ),
+              ),
           ), 
                 ),
             ),
@@ -75,7 +86,14 @@ class categoriesPage extends StatelessWidget {
               height: 300,
               fit:BoxFit.cover
               ),
-            categoriesName: Text('womens'),
+            categoriesName: Text(
+              'womens',
+               style: GoogleFonts.poppins(
+                fontSize: 25,
+                fontWeight:FontWeight.bold,
+                color: Colors.grey
+              ),
+              ),
           ), 
               )
             ),
@@ -95,7 +113,14 @@ class categoriesPage extends StatelessWidget {
               fit: BoxFit.cover,
 
               ),
-            categoriesName: Text('kids'),
+            categoriesName: Text(
+              'kids',
+               style: GoogleFonts.poppins(
+                fontSize: 25,
+                fontWeight:FontWeight.bold,
+                color: Colors.grey
+              ),
+              ),
           ), 
               ),
             ),
@@ -108,8 +133,20 @@ class categoriesPage extends StatelessWidget {
               },
               child:Center(
               child: CategoriesCard(
-            categoriesImage: Image.asset('assets/categoriesImage/men.jpg'),
-            categoriesName: Text('Shoe'),
+            categoriesImage: Image.asset(
+              'assets/categoriesImage/men.jpg',
+               width: 300,
+              height: 300,
+              fit: BoxFit.cover,
+              ),
+            categoriesName: Text(
+              'Shoe',
+               style: GoogleFonts.poppins(
+                fontSize: 25,
+                fontWeight:FontWeight.bold,
+                color: Colors.grey
+              ),
+              ),
           ), 
               )
             ),
